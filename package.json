@@ -1,0 +1,57 @@
+{
+  "name": "stencil-eslint-core",
+  "version": "0.1.0",
+  "description": "ESLint utils to help create custom rules for Stencil JS projects.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "stencil",
+    "stencileslint",
+    "stencil eslint"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "build": "tsc -p . && rollup -c",
+    "version": "npm run build",
+    "release": "np --no-release-draft"
+  },
+  "dependencies": {
+    "tsutils": "^3.0.0",
+    "eslint-utils": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^2.23.0",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint": "^6.0.0",
+    "typescript": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^6.1.2",
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-utils": "^2.0.0",
+    "jest": "^25.1.0",
+    "jest-cli": "^25.1.0",
+    "np": "^6.2.0",
+    "rollup": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jcfranco/stencil-eslint-core.git"
+  },
+  "license": "MIT"
+}
