@@ -11,7 +11,9 @@ export function isPrivate(originalNode: ts.Node) {
       m.kind === ts.SyntaxKind.ProtectedKeyword
     ));
   }
-  return false;
+  // detect private identifier (#)
+  const firstChildNode = originalNode.getChildAt(0);
+  return firstChildNode ? firstChildNode.kind === SyntaxKind.PrivateIdentifier : false;
 }
 
 export function getDecorator(node: any, decoratorName?: string): any | any[] {
@@ -76,6 +78,7 @@ export const stencilLifecycle = [
   'componentDidLoad',
   'componentWillRender',
   'componentDidRender',
+  'componentShouldUpdate',
   'componentWillUpdate',
   'componentDidUpdate',
   'render'
