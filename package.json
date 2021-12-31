@@ -11,8 +11,10 @@
     "stencil eslint"
   ],
   "main": "dist/index.js",
+  "types": "dist/build/index.d.ts",
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "dist/build/*.d.ts"
   ],
   "scripts": {
     "build": "tsc -p . && rollup -c",
