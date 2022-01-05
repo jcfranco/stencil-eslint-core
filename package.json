@@ -1,6 +1,6 @@
 {
   "name": "stencil-eslint-core",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "ESLint utils to help create custom rules for Stencil JS projects.",
   "keywords": [
     "eslint",
