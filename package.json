@@ -34,7 +34,7 @@
     "@types/estree": "~1.0.0",
     "@types/jest": "~27.4.0",
     "@typescript-eslint/parser": "~5.31.0",
-    "eslint": "~8.20.0",
+    "eslint": "~8.30.0",
     "jest": "~27.5.1",
     "jest-cli": "~28.1.2",
     "np": "~7.6.0",
