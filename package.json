@@ -10,7 +10,6 @@
     "stencileslint",
     "stencil eslint"
   ],
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/build/index.d.ts",
   "files": [
