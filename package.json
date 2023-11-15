@@ -10,7 +10,6 @@
     "stencileslint",
     "stencil eslint"
   ],
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/build/index.d.ts",
   "files": [
@@ -18,7 +17,7 @@
     "dist/build/*.d.ts"
   ],
   "scripts": {
-    "build": "tsc -p . && rollup -c",
+    "build": "tsc -p . && rollup -c --bundleConfigAsCjs",
     "version": "npm run build",
     "release": "np --no-release-draft --no-tests"
   },
